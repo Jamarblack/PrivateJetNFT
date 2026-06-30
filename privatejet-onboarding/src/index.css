@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-asphalt: #0a0a0c;
+  --color-concrete: #151518;
+  --color-neon-orange: #FF4500;
+  --color-acid-yellow: #D4FF00;
+  --color-graffiti-pink: #FF0055;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Bebas Neue', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-asphalt);
+    color: #F0F0F0;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    /* subtle grunge texture overlay using CSS radial gradients */
+    background-image: 
+      radial-gradient(circle at 15% 50%, rgba(255, 69, 0, 0.05), transparent 25%),
+      radial-gradient(circle at 85% 30%, rgba(212, 255, 0, 0.05), transparent 25%);
+  }
+}
