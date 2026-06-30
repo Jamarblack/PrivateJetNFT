@@ -53,7 +53,7 @@ function App() {
       <main className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 md:px-24 pt-24 pb-12">
 
         {/* 1. Mascot Card (Now guaranteed to be ABOVE the text) */}
-        <div className="absolute w-full flex  justify-center items-center mb-6">
+        <div className="relative z-20 w-full flex  justify-center items-center mb-6">
           <MascotViewer imagePath="/mascot.png" />
         </div>
 
